@@ -5,6 +5,7 @@ import sys
 import click
 import fastjsonschema
 from snakemd import Document
+from snakemd.generator import InlineText
 
 ALLOWED_TYPE = [
     'B2B',
@@ -22,6 +23,7 @@ ALLOWED_MARKET = [
     'Ecommerce',
     'Software',
     'Hardware',
+    'Service',
     'Other',
     # TODO: in progress (crete issues if missing your market)
 ]
@@ -120,9 +122,32 @@ def build(data):
             'italia-opensource.github.io').insert_link('italia-opensource.github.io', 'https://italia-opensource.github.io/awesome-italia-startups/')
 
         doc.add_header('List', level=4)
+        table_content_project = []
+        startups_name = []
 
         for item in data:
-            print(item)  # TODO: add table md
+            name = item.get('name')
+            if name in startups_name:
+                raise Exception(f'Startup {name} already exist')
+
+            description = item.get('description', '')
+            if len(description) > 59:
+                description = description[0:60] + ' [..]'
+
+            table_content_project.append([
+                InlineText(name, url=item.get('site_url')),
+                item.get('type'),
+                item.get('market'),
+                ', '.join(item['tags']),
+                description
+            ])
+
+            startups_name.append(name)
+
+        doc.add_table(
+            ['Name', 'Type', 'Market', 'Tags', 'Description'],
+            table_content_project
+        )
 
     def _contributors(doc):
         doc.add_header('Contributors', level=3)

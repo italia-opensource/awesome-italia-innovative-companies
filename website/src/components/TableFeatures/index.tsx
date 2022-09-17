@@ -101,7 +101,7 @@ export default function TableFeatures(): JSX.Element {
     }
     const repositoryPlatformBodyTemplate = (rowData) => {
         return <React.Fragment>
-            <a href={rowData.repository_url}>{rowData.repository_platform}</a>
+            <a href={rowData.repository_organization_url}>Repositories</a>
         </React.Fragment>
     }
 
@@ -128,10 +128,11 @@ export default function TableFeatures(): JSX.Element {
                     globalFilterFields={['name', 'repository_platform']} 
                     header={header} emptyMessage="No startups found.">
                     <Column field="name" header="Name"  body={nameBodyTemplate} filter filterPlaceholder="Search by name" style={{ minWidth: '20em' }} />
-                    <Column field="repository_platform" body={repositoryPlatformBodyTemplate} header="Repository Platform" style={{ minWidth: '10em' }} />
                     <Column field="type" header="Type" filter filterPlaceholder="Search by type" style={{ minWidth: '10em' }} />
-                    <Column field="license" header="License" filter filterPlaceholder="Search by license" style={{ minWidth: '10em' }} />
+                    <Column field="market" header="Market" filter filterPlaceholder="Search by market" style={{ minWidth: '10em' }} />
                     <Column field="tags" header="Tags" filter filterPlaceholder="Search by tags" style={{ minWidth: '30em' }} body={tagsBodyTemplate} />
+                    <Column field="foundation_year" header="Foundation Year" filter filterPlaceholder="Search foundation year" style={{ minWidth: '10em' }} />
+                    <Column field="repository_organization_url" body={repositoryPlatformBodyTemplate} header="Open source" style={{ minWidth: '10em' }} />
                     <Column field="description" header="Description" style={{ minWidth: '50em' }}/>
                 </DataTable>
             </div>

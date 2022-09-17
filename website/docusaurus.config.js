@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Italia Opensource',
+  title: 'Italia Opensource | Awesome Startups',
   tagline: 'Italia Opensource',
   url: 'https://italia-opensource.github.io',
   baseUrl: '/awesome-italia-startups/',
@@ -50,6 +50,16 @@ const config = {
           // src: 'img/logo.svg',
         // },
         items: [
+          {
+            label: 'Awesome',
+            position: 'left',
+            items: [
+              {
+                href: 'https://github.com/italia-opensource/awesome-italia-opensource',
+                label: 'Awesome Open Source',
+              }
+            ]
+          },
           {
             href: 'https://github.com/italia-opensource/awesome-italia-startups',
             label: 'GitHub',
