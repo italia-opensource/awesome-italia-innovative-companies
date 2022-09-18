@@ -16,6 +16,7 @@ ALLOWED_TYPE = [
 ]
 
 ALLOWED_MARKET = [
+    'Automotive',
     'Fintech',
     'Energy',
     'AI',
@@ -24,6 +25,7 @@ ALLOWED_MARKET = [
     'Software',
     'Hardware',
     'Service',
+    'Insurance',
     'Other',
     # TODO: in progress (crete issues if missing your market)
 ]
