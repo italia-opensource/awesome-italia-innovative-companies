@@ -60,7 +60,7 @@ Subsequently, the `README.md` file is automatically generated, so you don't have
   "tags": [
     "python", "aws"
   ],
-  "foundation_year": "YYYY/MM/DD"
+  "foundation_year": "YYYY" // required data >= 2010
 }
 ```
 
@@ -82,6 +82,7 @@ Subsequently, the `README.md` file is automatically generated, so you don't have
 - Ecommerce
 - Software
 - Hardware
+- Service
 - Other
 
 #### Tags

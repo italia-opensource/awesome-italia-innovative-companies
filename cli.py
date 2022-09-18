@@ -23,6 +23,7 @@ ALLOWED_MARKET = [
     'Ecommerce',
     'Software',
     'Hardware',
+    'Service',
     'Other',
     # TODO: in progress (crete issues if missing your market)
 ]
@@ -38,7 +39,10 @@ JSONSCHEME_COMPILE = fastjsonschema.compile(
             'description': {'type': 'string', 'minLength': 5, 'maxLength': 254},
             'type': {'type': 'string', 'enum': ALLOWED_TYPE},
             'market': {'type': 'string', 'enum': ALLOWED_MARKET},
-            'foundation_year': {'type': 'string', 'format': 'date'},
+            'foundation_year': {
+                'type': 'string',
+                'pattern': '^[2][0-0][1-2][0-9]$'
+            },
             'tags': {
                 'type': 'array',
                 'minItems': 1,
@@ -54,7 +58,7 @@ JSONSCHEME_COMPILE = fastjsonschema.compile(
             'name',
             'site_url',
             'type',
-            'market'
+            'market',
             'tags',
         ],
         'additionalProperties': False
@@ -111,28 +115,6 @@ def build(data):
         <a href="https://www.buymeacoffee.com/fabriziocafolla" target="_blank"><img  align="right" src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 30px !important; width: 150px !important" ></a>""")
 
     def _projects(doc, data):
-        def _repository(repository_platform, repositories_url, license):
-            license = f'<img align="right" src="https://img.shields.io/static/v1?label=license&message={license}&color=orange" alt="License">'
-            if repository_platform == 'github':
-                repositories_url = '/'.join(repository_url.replace(
-                    'https://github.com/', '').split('/')[0:2])
-                stars = f'<img align="right" src="https://img.shields.io/github/stars/{repositories_url}?label=%E2%AD%90%EF%B8%8F&logo=github" alt="Stars">'
-                issues = f'<img align="right" src="https://img.shields.io/github/issues-raw/{repositories_url}" alt="Issues">'
-                return f'{stars}<br>{issues}<br>{license}'
-
-            if repository_platform == 'bitbucket':
-                repositories_url = '/'.join(repository_url.replace(
-                    'https://bitbucket.org/', '').split('/')[0:2])
-                issues = f'<img align="right" src="https://img.shields.io/bitbucket/issues-raw/{repositories_url}" alt="Issues">'
-                return f'{issues}<br>{license}'
-
-            if repository_platform == 'gitlab':
-                repositories_url = '/'.join(repository_url.replace(
-                    'https://gitlab.com', '').split('/')[0:2])
-                stars = f'<img align="right" src="https://img.shields.io/gitlab/stars/{repositories_url}?label=%E2%AD%90%EF%B8%8F&logo=gitlab" alt="Stars">'
-                issues = f'<img align="right" src="https://img.shields.io/gitlab/issues/open-raw/{repositories_url}" alt="Issues">'
-                return f'{stars}<br>{issues}<br>{license}'
-
         doc.add_header('Startups', level=3)
 
         doc.add_header('Website view', level=4)
@@ -141,34 +123,29 @@ def build(data):
 
         doc.add_header('List', level=4)
         table_content_project = []
-
-        repositories_url = []
+        startups_name = []
 
         for item in data:
-            repository_url = item['repository_url']
+            name = item.get('name')
+            if name in startups_name:
+                raise Exception(f'Startup {name} already exist')
 
-            if item.get('repository_url') in repositories_url:
-                raise Exception(
-                    f"Project {item['name']} ({repository_url}) already exist")
-
-            name = item['name'].title()
-            repository = _repository(
-                item['repository_platform'], item['repository_url'], item['license'])
-            tags = ', '.join(item['tags'])
             description = item.get('description', '')
             if len(description) > 59:
                 description = description[0:60] + ' [..]'
 
             table_content_project.append([
                 InlineText(name, url=item.get('site_url')),
-                InlineText(repository, url=repository_url),
-                tags,
+                item.get('type'),
+                item.get('market'),
+                ', '.join(item['tags']),
                 description
             ])
-            repositories_url.append(repository_url)
+
+            startups_name.append(name)
 
         doc.add_table(
-            ['Name', 'Repository', 'Stack', 'Description'],
+            ['Name', 'Type', 'Market', 'Tags', 'Description'],
             table_content_project
         )
 

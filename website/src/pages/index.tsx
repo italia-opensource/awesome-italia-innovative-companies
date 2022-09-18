@@ -17,7 +17,7 @@ export default function Home(): JSX.Element {
         <div className="content">
 
         <header>
-              <h1>Italia Opensource</h1>
+              <h1>Awesome Italia Startups</h1>
             </header>
             <section>
               <p>
