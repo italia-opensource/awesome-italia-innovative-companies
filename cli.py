@@ -16,6 +16,8 @@ ALLOWED_TYPE = [
 ]
 
 ALLOWED_MARKET = [
+    'Health',
+    'Food',
     'Automotive',
     'Fintech',
     'Energy',

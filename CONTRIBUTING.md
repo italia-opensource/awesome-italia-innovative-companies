@@ -75,6 +75,8 @@ Subsequently, the `README.md` file is automatically generated, so you don't have
 
 #### Allowed Market of startups
 
+- Food
+- Health
 - Automotive
 - Fintech
 - Energy
