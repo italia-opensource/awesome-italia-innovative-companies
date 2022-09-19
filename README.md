@@ -1,6 +1,6 @@
 # Italia Opensource
 
-<img src='https://img.shields.io/badge/startups-8-green'> <img src='https://img.shields.io/github/last-commit/italia-opensource/awesome-italia-startups/main'>
+<img src='https://img.shields.io/badge/startups-10-green'> <img src='https://img.shields.io/github/last-commit/italia-opensource/awesome-italia-startups/main'>
 
 Awesome Italia Startups is a list of italian startups.
 
@@ -20,16 +20,18 @@ Please read the [contribution guidelines](https://github.com/italia-opensource/a
 
 #### List
 
-| Name                                   | Type | Market     | Tags                   | Description                                                       |
-| -------------------------------------- | ---- | ---------- | ---------------------- | ----------------------------------------------------------------- |
-| [Jobtech](https://jobtech.it)          | D2C  | Service    | lavoro, contratti      | Ottimizzare il processo di incontro tra aziende e candidati [..]  |
-| [Neulabs](https://neulabs.com)         | D2C  | Service    | ecommerce, aws         |                                                                   |
-| [Prima](https://prima.it)              | B2C  | Insurance  | assicurazioni, polizze | Prima è un'agenzia assicurativa specializzata nella vendita [..]  |
-| [Satispay](https://www.satispay.com/)  | B2C  | Fintech    | e-commerce, payments   | Semplificare i pagamenti per migliorare la vita delle person [..] |
-| [Scalapay](https://www.scalapay.com/)  | B2C  | Fintech    | e-commerce, payments   | Scalapay è un innovativo metodo di pagamento che ti permette [..] |
-| [Scuter](https://www.scuter.co)        | D2C  | Automotive | sharing, mobility      | Scuter is a Mobility as a Service (MaaS) solution that can s [..] |
-| [Yolo](https://yolo-insurance.com)     | B2C  | Insurance  | assicurazioni, polizze | Innovare l'offerta assicurativa per soddisfare nuove esigenz [..] |
-| [Zappyrent](https://www.zappyrent.com) | D2C  | Service    | affitti, case          | Piattaforma di affitti a medio‑lungo termine, che gestisce l [..] |
+| Name                                   | Type | Market     | Tags                                   | Description                                                       |
+| -------------------------------------- | ---- | ---------- | -------------------------------------- | ----------------------------------------------------------------- |
+| [Amusi](https://www.amusi.it/)         | D2C  | Food       | cibo per animali, prodotti per animali | Elevare il tenore di vita degli animali domestici offrendo p [..] |
+| [Jobtech](https://jobtech.it)          | D2C  | Service    | lavoro, contratti                      | Ottimizzare il processo di incontro tra aziende e candidati [..]  |
+| [Neulabs](https://neulabs.com)         | D2C  | Service    | ecommerce, aws                         | Born to identify and build the entrepreneurial successes of [..]  |
+| [Prima](https://prima.it)              | B2C  | Insurance  | assicurazioni, polizze                 | Prima è un'agenzia assicurativa specializzata nella vendita [..]  |
+| [Satispay](https://www.satispay.com/)  | B2C  | Fintech    | e-commerce, payments                   | Semplificare i pagamenti per migliorare la vita delle person [..] |
+| [Scalapay](https://www.scalapay.com/)  | B2C  | Fintech    | e-commerce, payments                   | Scalapay è un innovativo metodo di pagamento che ti permette [..] |
+| [Scuter](https://www.scuter.co)        | D2C  | Automotive | sharing, mobility                      | Scuter is a Mobility as a Service (MaaS) solution that can s [..] |
+| [Vitavi](https://www.vitavi.it/)       | D2C  | Health     | integratori, salute                    | Integratori alimentari e prodotti beauty efficaci e innovati [..] |
+| [Yolo](https://yolo-insurance.com)     | B2C  | Insurance  | assicurazioni, polizze                 | Innovare l'offerta assicurativa per soddisfare nuove esigenz [..] |
+| [Zappyrent](https://www.zappyrent.com) | D2C  | Service    | affitti, case                          | Piattaforma di affitti a medio‑lungo termine, che gestisce l [..] |
 
 ### Contributors
 
