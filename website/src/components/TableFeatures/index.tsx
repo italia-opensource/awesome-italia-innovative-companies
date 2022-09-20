@@ -33,7 +33,7 @@ export default function TableFeatures(): JSX.Element {
                 return fetch("").then(() => staticData)
         }
 
-        let url: string = 'https://api.github.com/repos/italia-opensource/awesome-italia-startups/contents/website/src/data/outputs.json'
+        let url: string = 'https://api.github.com/repos/italia-opensource/awesome-italia-innovative-companies/contents/website/src/data/outputs.json'
         return fetch(url)
             .then((response) => response.json())
             .then((data) => {
@@ -126,7 +126,7 @@ export default function TableFeatures(): JSX.Element {
                     loading={loading} 
                     responsiveLayout="scroll"
                     globalFilterFields={['name', 'repository_platform']} 
-                    header={header} emptyMessage="No startups found.">
+                    header={header} emptyMessage="No companies found.">
                     <Column field="name" header="Name"  body={nameBodyTemplate} filter filterPlaceholder="Search by name" style={{ minWidth: '20em' }} />
                     <Column field="type" header="Type" filter filterPlaceholder="Search by type" style={{ minWidth: '10em' }} />
                     <Column field="market" header="Market" filter filterPlaceholder="Search by market" style={{ minWidth: '10em' }} />

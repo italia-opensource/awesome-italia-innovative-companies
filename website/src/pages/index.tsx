@@ -9,7 +9,7 @@ export default function Home(): JSX.Element {
     <Layout
       title={`Home`}
       wrapperClassName="layout"
-      description="Awesome Italia Startups is a list of italian startups. The repository intends to give visibility to startups and stimulate the community to contribute to growing the ecosystem.">
+      description="Awesome Italia Innovative Companies is a list of italian startups, scale-up and companies that innovate. The repository intends to give visibility to companies and stimulate the community to contribute to growing the ecosystem.">
       <main className="main">
         
 
@@ -17,12 +17,13 @@ export default function Home(): JSX.Element {
         <div className="content">
 
         <header>
-              <h1>Awesome Italia Startups</h1>
+              <h1>Awesome Italia Innovative Companies</h1>
             </header>
             <section>
               <p>
-                Awesome Italia Startups is a list of italian startups.<br/> 
-                The repository intends to give visibility to startups and stimulate the community to contribute to growing the ecosystem.
+                Awesome Italia Innovative Companies is a list of italian startups, scale-up and companies that innovate. 
+                <br/>
+                The repository intends to give visibility to companies and stimulate the community to contribute to growing the ecosystem.
               </p>
               <TableFeatures />
             </section>
@@ -56,7 +57,7 @@ export default function Home(): JSX.Element {
             </header>
             <section>
               <p>
-              The newsletter will be dedicated to keeping you updated on new open source projects, new startups in the Italian community and events around the country.
+              The newsletter will be dedicated to keeping you updated on new open source projects, new companies in the Italian community and events around the country.
               </p>
             </section>
             <footer>

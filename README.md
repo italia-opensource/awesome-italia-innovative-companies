@@ -1,12 +1,12 @@
 # Italia Opensource
 
-<img src='https://img.shields.io/badge/startups-10-green'> <img src='https://img.shields.io/github/last-commit/italia-opensource/awesome-italia-startups/main'>
+<img src='https://img.shields.io/badge/startups-10-green'> <img src='https://img.shields.io/github/last-commit/italia-opensource/awesome-italia-innovative-companies/main'>
 
 Awesome Italia Startups is a list of italian startups.
 
 The repository intends to give visibility to startups and stimulate the community to contribute to growing the ecosystem.
 
-Please read the [contribution guidelines](https://github.com/italia-opensource/awesome-italia-startups/blob/main/CONTRIBUTING.md) before opening a pull request or contributing to this repository
+Please read the [contribution guidelines](https://github.com/italia-opensource/awesome-italia-innovative-companies/blob/main/CONTRIBUTING.md) before opening a pull request or contributing to this repository
 
 ### Mantained by
 
@@ -16,7 +16,7 @@ Please read the [contribution guidelines](https://github.com/italia-opensource/a
 
 #### Website view
 
-[italia-opensource.github.io](https://italia-opensource.github.io/awesome-italia-startups/)
+[italia-opensource.github.io](https://italia-opensource.github.io/awesome-italia-innovative-companies/)
 
 #### List
 
@@ -35,7 +35,7 @@ Please read the [contribution guidelines](https://github.com/italia-opensource/a
 
 ### Contributors
 
-<a href="https://github.com/italia-opensource/awesome-italia-startups/graphs/contributors"> <img src="https://contrib.rocks/image?repo=italia-opensource/awesome-italia-startups" /> </a>
+<a href="https://github.com/italia-opensource/awesome-italia-innovative-companies/graphs/contributors"> <img src="https://contrib.rocks/image?repo=italia-opensource/awesome-italia-innovative-companies" /> </a>
 
 ### License
 

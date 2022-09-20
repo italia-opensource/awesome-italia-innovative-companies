@@ -102,37 +102,37 @@ def build(data):
     def _header(doc, data):
         doc.add_header('Italia Opensource')
         doc.add_paragraph(f"""
-            <img src='https://img.shields.io/badge/startups-{len(data)}-green'>
-            <img src='https://img.shields.io/github/last-commit/italia-opensource/awesome-italia-startups/main'>
+            <img src='https://img.shields.io/badge/companies-{len(data)}-green'>
+            <img src='https://img.shields.io/github/last-commit/italia-opensource/awesome-italia-innovative-companies/main'>
         """)
 
         doc.add_paragraph(
-            'Awesome Italia Startups is a list of italian startups.')
+            'Awesome Italia Innovative Companies is a list of italian startups, scale-up and companies that innovate.')
         doc.add_paragraph(
-            'The repository intends to give visibility to startups and stimulate the community to contribute to growing the ecosystem.')
+            'The repository intends to give visibility to companies and stimulate the community to contribute to growing the ecosystem.')
         doc.add_paragraph(
             'Please read the contribution guidelines before opening a pull request or contributing to this repository') \
-            .insert_link('contribution guidelines', 'https://github.com/italia-opensource/awesome-italia-startups/blob/main/CONTRIBUTING.md')
+            .insert_link('contribution guidelines', 'https://github.com/italia-opensource/awesome-italia-innovative-companies/blob/main/CONTRIBUTING.md')
 
         doc.add_header('Mantained by', level=3)
         doc.add_paragraph("""- **[Fabrizio Cafolla](https://github.com/FabrizioCafolla)**
         <a href="https://www.buymeacoffee.com/fabriziocafolla" target="_blank"><img  align="right" src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 30px !important; width: 150px !important" ></a>""")
 
     def _projects(doc, data):
-        doc.add_header('Startups', level=3)
+        doc.add_header('Companies', level=3)
 
         doc.add_header('Website view', level=4)
         doc.add_paragraph(
-            'italia-opensource.github.io').insert_link('italia-opensource.github.io', 'https://italia-opensource.github.io/awesome-italia-startups/')
+            'italia-opensource.github.io').insert_link('italia-opensource.github.io', 'https://italia-opensource.github.io/awesome-italia-innovative-companies/')
 
         doc.add_header('List', level=4)
         table_content_project = []
-        startups_name = []
+        companies_name = []
 
         for item in data:
             name = item.get('name')
-            if name in startups_name:
-                raise Exception(f'Startup {name} already exist')
+            if name in companies_name:
+                raise Exception(f'Company {name} already exist')
 
             description = item.get('description', '')
             if len(description) > 59:
@@ -146,7 +146,7 @@ def build(data):
                 description
             ])
 
-            startups_name.append(name)
+            companies_name.append(name)
 
         doc.add_table(
             ['Name', 'Type', 'Market', 'Tags', 'Description'],
@@ -156,8 +156,8 @@ def build(data):
     def _contributors(doc):
         doc.add_header('Contributors', level=3)
         doc.add_paragraph("""
-            <a href="https://github.com/italia-opensource/awesome-italia-startups/graphs/contributors">
-                <img src="https://contrib.rocks/image?repo=italia-opensource/awesome-italia-startups" />
+            <a href="https://github.com/italia-opensource/awesome-italia-innovative-companies/graphs/contributors">
+                <img src="https://contrib.rocks/image?repo=italia-opensource/awesome-italia-innovative-companies" />
             </a>
         """)
 
