@@ -1,10 +1,10 @@
 # Italia Opensource
 
-<img src='https://img.shields.io/badge/startups-10-green'> <img src='https://img.shields.io/github/last-commit/italia-opensource/awesome-italia-innovative-companies/main'>
+<img src='https://img.shields.io/badge/companies-10-green'> <img src='https://img.shields.io/github/last-commit/italia-opensource/awesome-italia-innovative-companies/main'>
 
-Awesome Italia Startups is a list of italian startups.
+Awesome Italia Innovative Companies is a list of italian startups, scale-up and companies that innovate.
 
-The repository intends to give visibility to startups and stimulate the community to contribute to growing the ecosystem.
+The repository intends to give visibility to companies and stimulate the community to contribute to growing the ecosystem.
 
 Please read the [contribution guidelines](https://github.com/italia-opensource/awesome-italia-innovative-companies/blob/main/CONTRIBUTING.md) before opening a pull request or contributing to this repository
 
@@ -12,7 +12,7 @@ Please read the [contribution guidelines](https://github.com/italia-opensource/a
 
 - **[Fabrizio Cafolla](https://github.com/FabrizioCafolla)** <a href="https://www.buymeacoffee.com/fabriziocafolla" target="_blank"><img align="right" src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 30px !important; width: 150px !important" ></a>
 
-### Startups
+### Companies
 
 #### Website view
 
