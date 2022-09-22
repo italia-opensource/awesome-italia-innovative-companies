@@ -1,8 +1,8 @@
-# Contributing to Awesome Italia Startups
+# Contributing to Awesome Italia Innovative Companies
 
 ## Code of Conduct
 
-Please read [the full text](https://github.com/italia-opensource/awesome-italia-startups/blob/main/CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
+Please read [the full text](https://github.com/italia-opensource/awesome-italia-innovative-companies/blob/main/CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
 
 ### Join our Community
 
@@ -31,7 +31,7 @@ Reuirements:
 
 Setup env:
 
-- clone the awesome-italia-startups repostory.
+- clone the awesome-italia-innovative-companies repostory.
 - run `make setup`
 - run `source .activate`
 
@@ -64,7 +64,7 @@ Subsequently, the `README.md` file is automatically generated, so you don't have
 }
 ```
 
-#### Allowed Type of startups
+#### Allowed Type of companies
 
 - B2B
 - B2C
@@ -73,7 +73,7 @@ Subsequently, the `README.md` file is automatically generated, so you don't have
 - Consulting
 - Other
 
-#### Allowed Market of startups
+#### Allowed Market of companies
 
 - Food
 - Health

@@ -6,10 +6,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Italia Opensource | Awesome Startups',
+  title: 'Italia Opensource | Awesome Innovative Companies',
   tagline: 'Italia Opensource',
   url: 'https://italia-opensource.github.io',
-  baseUrl: '/awesome-italia-startups/',
+  baseUrl: '/awesome-italia-innovative-companies/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   // favicon: 'img/favicon.ico',
@@ -17,7 +17,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'italia-opensource', // Usually your GitHub org/user name.
-  projectName: 'awesome-italia-startups', // Usually your repo name.
+  projectName: 'awesome-italia-innovative-companies', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -61,7 +61,7 @@ const config = {
             ]
           },
           {
-            href: 'https://github.com/italia-opensource/awesome-italia-startups',
+            href: 'https://github.com/italia-opensource/awesome-italia-innovative-companies',
             label: 'GitHub',
             position: 'left',
           },
