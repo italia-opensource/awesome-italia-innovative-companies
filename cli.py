@@ -16,6 +16,7 @@ ALLOWED_TYPE = [
 ]
 
 ALLOWED_MARKET = [
+    'Housing',
     'Health',
     'Food',
     'Automotive',
