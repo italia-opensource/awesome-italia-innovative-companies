@@ -1,3 +1,4 @@
 click>=8.*
 fastjsonschema>=2.*
+pre-commit>=2.20.*
 snakemd>=0.*
