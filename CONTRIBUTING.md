@@ -17,8 +17,7 @@ We have two type of issue:
 
 1. Bug report
 2. Feature reqeust
-
-**Please don't use the GitHub issue tracker for questions.** If you have any questions please contact us via Discord channel.
+3. Question
 
 ## Development
 
@@ -76,6 +75,8 @@ Subsequently, the `README.md` file is automatically generated, so you don't have
 #### Allowed Market of companies
 
 - Food
+- Aerospace
+- Housing
 - Health
 - Automotive
 - Fintech
