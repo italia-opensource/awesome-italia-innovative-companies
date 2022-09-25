@@ -56,8 +56,8 @@ export default function Map(): JSX.Element {
         markerList.push(<Marker
           key={company.name}
           position={[
-            company.geometry.coordinates[0],
-            company.geometry.coordinates[1]
+            company?.geometry?.coordinates[0] || 0.0,
+            company?.geometry?.coordinates[1] || 0.0
           ]}
         >
           <Popup>
