@@ -4,6 +4,7 @@ import sys
 
 import click
 import fastjsonschema
+from geopy.geocoders import Nominatim
 from snakemd import Document
 from snakemd.generator import InlineText
 
@@ -43,6 +44,7 @@ JSONSCHEME_COMPILE = fastjsonschema.compile(
             'description': {'type': 'string', 'minLength': 5, 'maxLength': 254},
             'type': {'type': 'string', 'enum': ALLOWED_TYPE},
             'market': {'type': 'string', 'enum': ALLOWED_MARKET},
+            'address': {'type': 'string'},
             'foundation_year': {
                 'type': 'string',
                 'pattern': '^[2][0-0][1-2][0-9]$'
@@ -93,7 +95,16 @@ def check(loaded: list):
     values = []
     for name, filename in loaded:
         print(f'Check: {name}')
-        values.append(json_validate(filename))
+        data = json_validate(filename)
+
+        if address := data.get('address'):
+            locator = Nominatim(user_agent='myGeocoder')
+            location = locator.geocode(address)
+            data['geometry'] = {
+                'type': 'Point',
+                'coordinates': [location.latitude, location.longitude]
+            }
+        values.append(data)
 
     return values
 

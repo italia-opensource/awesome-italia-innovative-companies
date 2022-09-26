@@ -28,16 +28,15 @@ export default function Map(): JSX.Element {
 
   const getData = async () => {
     if (isLocalHost(window.location.hostname)) {
-      console.warn("Development mode")
-      await fetch("");
-      return staticData;
+            console.warn("Development mode")
+            return fetch("").then(() => staticData)
     }
 
     const url: string = 'https://api.github.com/repos/italia-opensource/awesome-italia-innovative-companies/contents/website/src/data/outputs.json'
     const response = await fetch(url);
-    const data_1 = await response.json();
-    const encoding = data_1.encoding;
-    let content = data_1.content;
+    const data = await response.json();
+    const encoding = data.encoding;
+    let content = data.content;
     if (content) {
       if (encoding == "base64") {
         content = atob(content);
