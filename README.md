@@ -1,6 +1,6 @@
 # Italia Opensource
 
-<img src='https://img.shields.io/badge/companies-18-green'> <img src='https://img.shields.io/github/last-commit/italia-opensource/awesome-italia-innovative-companies/main'>
+<img src='https://img.shields.io/badge/companies-19-green'> <img src='https://img.shields.io/github/last-commit/italia-opensource/awesome-italia-innovative-companies/main'>
 
 Awesome Italia Innovative Companies is a list of italian startups, scale-up and companies that innovate.
 
@@ -36,6 +36,7 @@ Please read the [contribution guidelines](https://github.com/italia-opensource/a
 | [Satispay](https://www.satispay.com/)       | B2C  | Fintech    | e-commerce, payments                   | Semplificare i pagamenti per migliorare la vita delle person [..] |
 | [Scalapay](https://www.scalapay.com/)       | B2C  | Fintech    | e-commerce, payments                   | Scalapay è un innovativo metodo di pagamento che ti permette [..] |
 | [Scuter](https://www.scuter.co)             | D2C  | Automotive | sharing, mobility                      | Scuter is a Mobility as a Service (MaaS) solution that can s [..] |
+| [Tirasa](https://www.tirasa.net/)           | B2B  | Software   | identity, sso, provisioning            | Build, maintain and deploy a whole stack of Open Source Iden [..] |
 | [Vitavi](https://www.vitavi.it/)            | D2C  | Health     | integratori, salute                    | Integratori alimentari e prodotti beauty efficaci e innovati [..] |
 | [Wiseair](https://www.wiseair.vision/)      | B2B  | Health     | smart city                             | Uniamo persone, municipalità e aziende nella difesa dell'ari [..] |
 | [Yolo](https://yolo-insurance.com)          | B2C  | Insurance  | assicurazioni, polizze                 | Innovare l'offerta assicurativa per soddisfare nuove esigenz [..] |
