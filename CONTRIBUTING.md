@@ -89,6 +89,7 @@ Subsequently, the `README.md` file is automatically generated, so you don't have
 - Hardware
 - Service
 - Insurance
+- Travel
 - Other
 
 #### Tags
