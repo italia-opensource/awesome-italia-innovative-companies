@@ -28,3 +28,4 @@ jobs:
         run: |
           make setup-ci
           make lint-ci
+          make build

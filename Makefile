@@ -11,6 +11,12 @@ setup:
 setup-ci:
 	pip3 install -r requirements.txt
 
+start:
+	cd website && npm run start
+
+build:
+	cd website && npm run build
+
 lint:
 	pre-commit run --all-files && python3 cli.py
 
