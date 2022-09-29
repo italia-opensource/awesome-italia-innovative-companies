@@ -59,7 +59,8 @@ Subsequently, the `README.md` file is automatically generated, so you don't have
   "tags": [
     "python", "aws"
   ],
-  "foundation_year": "YYYY" // required data >= 2010
+  "foundation_year": "YYYY", // required data >= 2010
+  "address": "Colosseum, Piazza del Colosseo, 1, 00184 Roma RM" // no required
 }
 ```
 

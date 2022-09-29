@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import TableFeatures from '@site/src/components/TableFeatures';
 import NewsletterForm from '@site/src/components/NewsletterForm';
+import Map from '@site/src/components/Map';
 
 
 export default function Home(): JSX.Element {
@@ -10,8 +11,7 @@ export default function Home(): JSX.Element {
       title={`Home`}
       wrapperClassName="layout"
       description="Awesome Italia Innovative Companies is a list of italian startups, scale-up and companies that innovate. The repository intends to give visibility to companies and stimulate the community to contribute to growing the ecosystem.">
-      <main className="main">
-        
+      <main className="main">        
 
         <section className="wrapper">
         <div className="content">
@@ -29,6 +29,20 @@ export default function Home(): JSX.Element {
             </section>
           </div>
         </section>
+
+        <section className="wrapper">
+        <div className="content">
+
+        <header>
+              <h1>Location</h1>
+            </header>
+            <section>
+
+              <Map />
+            </section>
+          </div>
+        </section>
+        
 
 
         <section className="wrapper">
