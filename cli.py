@@ -18,6 +18,7 @@ ALLOWED_TYPE = [
 
 ALLOWED_MARKET = [
     'Housing',
+    'Travel',
     'Aeropsace',
     'Health',
     'Food',
