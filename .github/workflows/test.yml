@@ -29,15 +29,15 @@ jobs:
         with:
           node-version: '16.14'
 
-      - name: Get npm cache
-        id: npm-cache
-        run: echo "::set-output name=dir::$(npm cache dir)"
+      - name: Get yarn cache
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
 
       - name: Cache dependencies
         uses: actions/cache@v2
         with:
-          path: ${{ steps.npm-cache.outputs.dir }}
-          key: ${{ runner.os }}-website-${{ hashFiles('**/package-lock.json') }}
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-website-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-website-
 
@@ -45,5 +45,5 @@ jobs:
         run: |
           make setup-ci
           make lint-ci
-          npm install
+          yarn install
           make build
