@@ -37,7 +37,6 @@ export default function Home(): JSX.Element {
               <h1>Location</h1>
             </header>
             <section>
-
               <Map />
             </section>
           </div>

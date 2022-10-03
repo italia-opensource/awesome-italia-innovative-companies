@@ -20,7 +20,6 @@
     "@formspree/react": "^2.3.3",
     "@mdx-js/react": "^1.6.22",
     "@types/classnames": "^2.2.10",
-    "@types/node": "10.12.24",
     "@types/react": "^17.0.2",
     "@types/react-transition-group": "^4.2.4",
     "clsx": "^1.2.1",
@@ -39,6 +38,7 @@
     "@docusaurus/module-type-aliases": "2.1.0",
     "@tsconfig/docusaurus": "^1.0.5",
     "@types/leaflet": "^1.8.0",
+    "@types/node": "^18.7.23",
     "typescript": "^4.7.4"
   },
   "browserslist": [
