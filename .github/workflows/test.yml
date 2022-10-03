@@ -24,8 +24,26 @@ jobs:
         with:
           python-version: 3.9
 
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.14'
+
+      - name: Get npm cache
+        id: npm-cache
+        run: echo "::set-output name=dir::$(npm cache dir)"
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.npm-cache.outputs.dir }}
+          key: ${{ runner.os }}-website-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-website-
+
       - name: Setup and test
         run: |
           make setup-ci
           make lint-ci
+          npm install
           make build
