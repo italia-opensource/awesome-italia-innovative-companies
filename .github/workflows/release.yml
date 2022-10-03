@@ -36,9 +36,13 @@ jobs:
         run: |
           git config --global user.email "${{ secrets.ACTION_EMAIL }}"
           git config --global user.name "FabrizioCafolla"
-          git add README.md website/src/data/outputs.json
-          git commit -m "feat(release): Update README.md"
-          git push
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Nothing to update"
+          else
+            git add README.md website/src/data/outputs.json
+            git commit -m "feat(release): Update README.md"
+            git push
+          fi
 
   deploy:
     name: Deploy Github pages
@@ -59,20 +63,10 @@ jobs:
         with:
           node-version: '16.14'
 
-      - name: Get yarn cache
-        id: yarn-cache
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - name: Cache dependencies
-        uses: actions/cache@v2
-        with:
-          path: ${{ steps.yarn-cache.outputs.dir }}
-          key: ${{ runner.os }}-website-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-website-
-
-      - run: npm install
-      - run: npm run build
+      - name: Website build
+        run: |
+          npm install
+          npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
