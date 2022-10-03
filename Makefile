@@ -15,7 +15,7 @@ start:
 	cd website && npm run start
 
 build:
-	cd website && npm run build
+	cd website && npm install && npm run build
 
 lint:
 	pre-commit run --all-files && python3 cli.py
