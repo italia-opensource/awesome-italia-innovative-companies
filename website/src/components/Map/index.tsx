@@ -1,7 +1,7 @@
 declare var require: any
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import 'leaflet/dist/leaflet.css';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import staticData from "../../data/outputs.json";
 
@@ -31,46 +31,49 @@ const getData = async () => {
 }
 
 
-
 export default function Map(): JSX.Element {
+  const [markerList, setMarkerList] = useState();
+
+  useEffect(() => {
+    const Marker = require('react-leaflet').Marker;
+    const Popup = require('react-leaflet').Popup;
+    const L = require('leaflet');
+    const markers: typeof Marker[] = [];
+
+    getData().then(result => {
+      result.data.map((company, idx) => (
+        markers.push(<Marker
+          key={idx}
+          position={[
+            company?.geometry?.coordinates[0] || 0.0,
+            company?.geometry?.coordinates[1] || 0.0
+          ]}
+          icon={L.icon({
+            iconSize: [25, 41],
+            iconAnchor: [10, 41],
+            popupAnchor: [2, -40],
+            iconUrl: "https://unpkg.com/leaflet@1.6/dist/images/marker-icon.png",
+            shadowUrl: "https://unpkg.com/leaflet@1.6/dist/images/marker-shadow.png"
+          })}
+        >
+          <Popup>
+            <a href={company.site_url}>{company.name}</a>
+            <br />
+            {company.market}
+          </Popup>
+        </Marker>)
+      ))
+      setMarkerList(markers)
+    });
+  });
 
   return (
     <BrowserOnly fallback={<div>Loading...</div>}>
       {() => {
         const MapContainer = require('react-leaflet').MapContainer;
         const TileLayer = require('react-leaflet').TileLayer;
-        const Marker = require('react-leaflet').Marker;
-        const Popup = require('react-leaflet').Popup;
-        const L = require('leaflet');
 
         const romeLocation = [41.9028, 12.4964];
-
-        const markerList: typeof Marker[] = [];
-
-        getData().then(result => {
-          result.data.map((company, idx) => (
-            markerList.push(<Marker
-              key={idx}
-              position={[
-                company?.geometry?.coordinates[0] || 0.0,
-                company?.geometry?.coordinates[1] || 0.0
-              ]}
-              icon={L.icon({
-                iconSize: [25, 41],
-                iconAnchor: [10, 41],
-                popupAnchor: [2, -40],
-                iconUrl: "https://unpkg.com/leaflet@1.6/dist/images/marker-icon.png",
-                shadowUrl: "https://unpkg.com/leaflet@1.6/dist/images/marker-shadow.png"
-              })}
-            >
-              <Popup>
-                <a href={company.site_url}>{company.name}</a>
-                <br />
-                {company.market}
-              </Popup>
-            </Marker>)
-          ))
-        });
 
         return <MapContainer center={romeLocation} zoom={5} scrollWheelZoom={false} style={{
           height: "500px", marginTop: "10px", marginBottom: '10px'
