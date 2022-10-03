@@ -1,6 +1,6 @@
 # Italia Opensource
 
-<img src='https://img.shields.io/badge/companies-27-green'> <img src='https://img.shields.io/github/last-commit/italia-opensource/awesome-italia-innovative-companies/main'>
+<img src='https://img.shields.io/badge/companies-28-green'> <img src='https://img.shields.io/github/last-commit/italia-opensource/awesome-italia-innovative-companies/main'>
 
 Awesome Italia Innovative Companies is a list of italian startups, scale-up and companies that innovate.
 
@@ -27,6 +27,7 @@ Please read the [contribution guidelines](https://github.com/italia-opensource/a
 | [Casavo](https://casavo.com/)               | B2C  | Housing    | house                                                                    | Vendere o comprare casa non è così semplice. Per questo nasc [..] |
 | [Dorbit](https://www.dorbit.space/)         | B2B  | Aeropsace  | space logistics                                                          | We offer solutions based on proprietary technologies that en [..] |
 | [Enel X](https://www.enelx.com/)            | B2C  | Energy     | energy supply, sustainable                                               | We are leading the energy transformation, making life smarte [..] |
+| [Flowe](https://www.flowe.com/)             | B2C  | Fintech    | carta di debito, sostenibilità                                           | La Flowe Card è la carta di debito in legno che rispetta rig [..] |
 | [Genomeup](http://www.genomeup.com/)        | B2B  | Biotech    | health, ai                                                               | GenomeUp has developed several bioinformatics tools and prot [..] |
 | [Jobtech](https://jobtech.it)               | D2C  | Service    | lavoro, contratti                                                        | Ottimizzare il processo di incontro tra aziende e candidati [..]  |
 | [Mia-Care](https://mia-care.io)             | B2B  | Health     | cloud-native, kubernetes, digital health, healthcare                     | Mia-Care helps Pharma, MedTech, and Clinics accelerate their [..] |
