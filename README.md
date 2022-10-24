@@ -1,6 +1,6 @@
 # Italia Opensource
 
-<img src='https://img.shields.io/badge/companies-28-green'> <img src='https://img.shields.io/github/last-commit/italia-opensource/awesome-italia-innovative-companies/main'>
+<img src='https://img.shields.io/badge/companies-29-green'> <img src='https://img.shields.io/github/last-commit/italia-opensource/awesome-italia-innovative-companies/main'>
 
 Awesome Italia Innovative Companies is a list of italian startups, scale-up and companies that innovate.
 
@@ -29,6 +29,7 @@ Please read the [contribution guidelines](https://github.com/italia-opensource/a
 | [Enel X](https://www.enelx.com/)            | B2C  | Energy     | energy supply, sustainable                                               | We are leading the energy transformation, making life smarte [..] |
 | [Flowe](https://www.flowe.com/)             | B2C  | Fintech    | carta di debito, sostenibilità                                           | La Flowe Card è la carta di debito in legno che rispetta rig [..] |
 | [Genomeup](http://www.genomeup.com/)        | B2B  | Biotech    | health, ai                                                               | GenomeUp has developed several bioinformatics tools and prot [..] |
+| [Hiway Media](https://hiway.media)          | B2C  | Fintech    | ott, digital, startup, video, streaming, platforms                       | Costruiamo esperienze d’intrattenimento digitali. Immaginiam [..] |
 | [Jobtech](https://jobtech.it)               | D2C  | Service    | lavoro, contratti                                                        | Ottimizzare il processo di incontro tra aziende e candidati [..]  |
 | [Mia-Care](https://mia-care.io)             | B2B  | Health     | cloud-native, kubernetes, digital health, healthcare                     | Mia-Care helps Pharma, MedTech, and Clinics accelerate their [..] |
 | [Mia-FinTech](https://mia-fintech.io)       | B2B  | Fintech    | cloud-native, kubernetes, financial services, open finance, open banking | Mia-FinTech bridges the gap between traditional institutions [..] |
